@@ -1,0 +1,88 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 3em;
+     text-align: center;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+.rating { 
+  border: none;
+  float: left;
+  margin-left: 42%;
+}
+
+.rating > input { display: none;justify-content: center; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  text-align: center;
+  
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: rgb(25, 71, 25); 
+ float: right; 
+}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+h1{ 
+    text-align: center;
+    font-size: 3em;
+    color: rgb(121, 28, 28);
+}
+/* p{
+    font-size: 1.25em ;
+    text-align: center;
+} */
+p{
+    text-align: center;
+    font-size:x-large;
+}
+h3{
+    
+    text-align: center;
+    font-size: 1.25em;
+}
+#option1{
+    margin-left: 36%;
+}
+#text1,#text2{
+    margin-left: 44%;
+}
+#suggestion{
+      margin-left:150px;
+      border-width:5px;
+      border-color: black;
+}
+body{
+  border-style: double;
+  margin-left:250px;
+  margin-right: 250px;
+  border-color: rgb(133, 13, 13);
+  border-width: 4px;
+}
+#head3{
+  padding-left: 50px;
+}
+#head1{
+  padding-left: 70px;
+}
+#button1{
+  text-align: center;
+}

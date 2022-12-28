@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carbon Emission Calculator</title>
+        <link rel="stylesheet" href="style-cals.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <img src="images/final logo.jpg" class="logo">
+        <div id="sec7">
+            <div class="navbar">
+                <a class="home" href="home.html">Home</a>
+                <a href="ways.html">Reduce</a>
+                <a href="calculator-copy.html">Car Calculator</a>
+                <a href="airplane.html">Airplane calculator</a>
+                <a href="bus.html">bus calculator</a>
+                <a href="contect us.html">Contact Us</a>
+                <a href="about.html">About Us</a>            
+                <a href="index2.html">Feedback</a>
+              </div>
+        </div>
+        <div class='container bg-info text-white rounded-lg text-center'>
+            <h1 id="heading">Carbon Footprint Calculator</h1>
+        <div id="sec1">
+            <center><h1>Car</h1></center>
+            <h3 id="subtopic">Enter mileage</h3>
+            <center><input id='mpg' type='number' placeholder='Insert MPG'/></center>
+            <h3 id="subtopic">Enter distance (in Kilometer)</h3>
+            <center><input id='dist' type='number' placeholder='Insert Distance'/></center>
+            <br>
+            <br>
+            <br>
+            <center><button class='btn-secondary rounded-sm' onclick='calcCO2()'>Calculate Carbon Footprint</button></center>
+          <br/>
+          <br/>
+        </div>
+        </div>
+        <div class='container text-center'>
+            <h2 id="res1">Your Carbon Footprint is:</h2>
+            <h1 id='result4' class='bg-success rounded-lg'></h1>
+            
+        </div>
+        <div id="result"></div>
+        <h3 id="res1">g CO<sub>2</sub></h3>
+        <h2 id="trees">No. Trees required to compensate the carbon footprint:</h2>
+        <h1 id="result2" class='bg-success rounded-lg'></h1>
+        
+        
+        
+        <script src="calculator.js">
+        </script>
+    </body>
+</html>
